@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | EAFC 26 Shop</title>
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+  <header class="fifa">
+    <div class="fifatext">
+      <h1>EAFC 26 Products</h1>
+      <p>Official merchandise, digital add-ons, and exclusive items for EAFC fans.</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="promos.html">Promos</a></li>
+      <li><a href="gameplay.html">Gameplay Features</a></li>
+      <li><a href="gamemode.html">Game Modes</a></li>
+      <li><a href="products.html" class="active">Products</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="intro">
+      <h2>Shop EAFC 26 Merchandise</h2>
+      <p>Browse our collection of exclusive items. Click any product to add it to your cart.</p>
+    </section>
+
+    <section class="product-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="images.jpeg" alt="EAFC 26 Custom Controller">
+        <h3>EAFC 26 Custom Controller</h3>
+        <p>High‑performance controller with EAFC branding and premium grip.</p>
+        <p class="price">$59.99</p>
+        <!-- PayPal Button for Controller -->
+<div id="paypal-controller"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AX_YnyR7ZXvJRhUbaXxSPFTXOl6KaNyPGF6aIUcDKGbJIwpLyMA3xq0cfum-uI251f-TcilQ3u2tBGZP&currency=USD"></script>
+<script>
+paypal.Buttons({
+    createOrder: function(data, actions) {
+        return actions.order.create({
+            purchase_units: [{ amount: { value: '59.99' }, description: 'EAFC 26 Custom Controller' }]
+        });
+    },
+    onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+            alert('Payment completed by ' + details.payer.name.given_name + '!');
+        });
+    }
+}).render('#paypal-controller');
+</script>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="GJWNCRAXQAACszV.jpg" alt="EAFC 26 Kit Jersey">
+        <h3>EAFC 26 Kit Jersey</h3>
+        <p>Official EAFC 26 jersey in multiple sizes.</p>
+        <p class="price">$49.99</p>
+        <!-- PayPal Button for Jersey -->
+<div id="paypal-jersey"></div>
+<script>
+paypal.Buttons({
+    createOrder: function(data, actions) {
+        return actions.order.create({
+            purchase_units: [{ amount: { value: '49.99' }, description: 'EAFC 26 Kit Jersey' }]
+        });
+    },
+    onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+            alert('Payment completed by ' + details.payer.name.given_name + '!');
+        });
+    }
+}).render('#paypal-jersey');
+</script>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="apps.1604.14498868119772737.a043c9b2-fba9-400f-abaf-3df6b2144e10.jpeg" alt="EAFC 26 Points Pack">
+        <h3>FC Points Pack</h3>
+        <p>Instant digital FC Points for in‑game purchases.</p>
+        <p class="price">$19.99</p>
+        <!-- PayPal Button for Points Pack -->
+<div id="paypal-points"></div>
+<script>
+paypal.Buttons({
+    createOrder: function(data, actions) {
+        return actions.order.create({
+            purchase_units: [{ amount: { value: '19.99' }, description: 'FC Points Pack' }]
+        });
+    },
+    onApprove: function(data, actions) {
+        return actions.order.capture().then(function(details) {
+            alert('Payment completed by ' + details.payer.name.given_name + '!');
+        });
+    }
+}).render('#paypal-points');
+</script>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 FC 26 | abdulazeez@dauda.com</p>
+  </footer>
+
+</body>
+</html>
