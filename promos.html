@@ -67,23 +67,34 @@
           reflecting their potential greatness.
         </p>
       </div>
+    </section>
 
-      <section class="gallery-section">
+    <section class="gallery-section">
       <h2>Promo Image Gallery</h2>
       <p>Check out some of the highlights from our most popular EAFC 26 events.</p>
   
       <div class="gallery">
-      <img src="tots-lewandowski-concept-v0-ybynjj4lr61f1.webp" alt="Team of the Season Promo">
-      <img src="EmdSW-nXUAE33r1.jpg" alt="Road to the Final">
-      <img src="future-stars-icon-concept-v0-yoxtcdyxotie1.webp" alt="Future Stars Promo">
-    </div>
-</section>
-
+        <img src="tots-lewandowski-concept-v0-ybynjj4lr61f1.webp" alt="Team of the Season Promo">
+        <img src="EmdSW-nXUAE33r1.jpg" alt="Road to the Final">
+        <img src="future-stars-icon-concept-v0-yoxtcdyxotie1.webp" alt="Future Stars Promo">
+      </div>
     </section>
+
+    <p id="info">Click the button to reveal a tip!</p>
+    <button onclick="changeText()">Reveal</button>
+
   </main>
 
   <footer>
     <p>© 2025 FC 26 | abdulazeez@dauda.com</p>
   </footer>
+
+  <script>
+    function changeText() {
+      document.getElementById("info").innerHTML =
+        "Tip: Check out the new EAFC 26 Ultimate Team cards!";
+    }
+  </script>
+
 </body>
 </html>
